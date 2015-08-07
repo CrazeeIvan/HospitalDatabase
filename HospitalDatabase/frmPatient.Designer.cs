@@ -162,7 +162,7 @@
             // 
             this.lblPatientsTitle.AutoSize = true;
             this.lblPatientsTitle.Font = new System.Drawing.Font("Magneto", 25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPatientsTitle.Location = new System.Drawing.Point(260, 49);
+            this.lblPatientsTitle.Location = new System.Drawing.Point(284, 25);
             this.lblPatientsTitle.Name = "lblPatientsTitle";
             this.lblPatientsTitle.Size = new System.Drawing.Size(173, 41);
             this.lblPatientsTitle.TabIndex = 0;
@@ -491,9 +491,10 @@
             // 
             // txtPosition
             // 
-            this.txtPosition.Location = new System.Drawing.Point(242, 293);
+            this.txtPosition.Enabled = false;
+            this.txtPosition.Location = new System.Drawing.Point(337, 293);
             this.txtPosition.Name = "txtPosition";
-            this.txtPosition.Size = new System.Drawing.Size(246, 20);
+            this.txtPosition.Size = new System.Drawing.Size(75, 20);
             this.txtPosition.TabIndex = 29;
             this.txtPosition.Text = " ";
             // 
@@ -571,7 +572,7 @@
             this.Controls.Add(this.tblPatientBindingNavigator);
             this.Controls.Add(this.lblPatientsTitle);
             this.Name = "frmPatient";
-            this.Text = "Task A";
+            this.Text = "Task A - Ciarán Maher";
             this.Load += new System.EventHandler(this.frmPatient_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tblPatientBindingNavigator)).EndInit();
             this.tblPatientBindingNavigator.ResumeLayout(false);

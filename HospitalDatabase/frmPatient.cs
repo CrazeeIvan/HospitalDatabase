@@ -15,19 +15,14 @@ namespace HospitalDatabase
         int pos;
         public frmPatient()
         {
-           
-            InitializeComponent();
-            
+            InitializeComponent(); 
         }
-
         private void tblPatientBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
             this.tblPatientBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.hospitalDataSet);
-
         }
-
         private void frmPatient_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'hospitalDataSet.tblPatient' table. You can move, or remove it, as needed.
@@ -35,18 +30,15 @@ namespace HospitalDatabase
             pos = this.tblPatientBindingSource.Position;
             txtPosition.Text = Convert.ToString(pos + 1) + " " + "of " + hospitalDataSet.tblPatient.Count;
         }
-
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         private void btnSearch_Click(object sender, EventArgs e)
         {
             frmSearch searchForm = new frmSearch();
             searchForm.Show();
         }
-
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             try
@@ -70,49 +62,50 @@ namespace HospitalDatabase
                 this.tblPatientTableAdapter.Fill(this.hospitalDataSet.tblPatient);
                 this.tblPatientBindingSource.Position = j;
                 MessageBox.Show("Update(s) cancelled.");
-
             }
             catch (System.Exception ex)
             {
                 MessageBox.Show("Cancel failed. /nException: " + ex);
             }
-            
         }
-
         private void btnNext_Click(object sender, EventArgs e)
         {
             this.tblPatientBindingSource.MoveNext();
             pos = this.tblPatientBindingSource.Position;
-            txtPosition.Text = Convert.ToString(pos + 1) + " " + "of " + hospitalDataSet.tblPatient.Count;
+            txtPosition.Text = Convert.ToString(pos + 1) + " " + "of " + tblPatientBindingSource.Count;
         }
 
         private void btnPrevious_Click(object sender, EventArgs e)
         {
             this.tblPatientBindingSource.MovePrevious();
             pos = this.tblPatientBindingSource.Position;
-            txtPosition.Text = Convert.ToString(pos + 1) + " " + "of " + hospitalDataSet.tblPatient.Count;
+            txtPosition.Text = Convert.ToString(pos + 1) + " " + "of " + tblPatientBindingSource.Count;
         }
         private void btnLast_Click(object sender, EventArgs e)
         {
             this.tblPatientBindingSource.MoveLast();
             pos = this.tblPatientBindingSource.Position;
-            txtPosition.Text = Convert.ToString(pos + 1) + " " + "of " + hospitalDataSet.tblPatient.Count;
+            txtPosition.Text = Convert.ToString(pos + 1) + " " + "of " + tblPatientBindingSource.Count;
         }
 
         private void btnFirst_Click(object sender, EventArgs e)
         {
             this.tblPatientBindingSource.MoveFirst();
             pos = this.tblPatientBindingSource.Position;
-            txtPosition.Text = Convert.ToString(pos + 1) + " " + "of " + hospitalDataSet.tblPatient.Count;
+            txtPosition.Text = Convert.ToString(pos + 1) + " " + "of " + tblPatientBindingSource.Count;
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
             this.tblPatientBindingSource.RemoveCurrent();
+            pos = this.tblPatientBindingSource.Position;
+            txtPosition.Text = Convert.ToString(pos + 1) + " " + "of " + tblPatientBindingSource.Count;
         }
         private void btnAdd_Click(object sender, EventArgs e)
         {
             this.tblPatientBindingSource.AddNew();
+            pos = this.tblPatientBindingSource.Position;
+            txtPosition.Text = Convert.ToString(pos + 1) + " " + "of " + tblPatientBindingSource.Count;
         }
     }
 }
