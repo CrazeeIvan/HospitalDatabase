@@ -31,12 +31,12 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSearch));
             this.cboField = new System.Windows.Forms.ComboBox();
-            this.tblPatientBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.hospitalDataSet = new HospitalDatabase.HospitalDataSet();
             this.cboOperator = new System.Windows.Forms.ComboBox();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnRun = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.hospitalDataSet = new HospitalDatabase.HospitalDataSet();
+            this.tblPatientBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tblPatientTableAdapter = new HospitalDatabase.HospitalDataSetTableAdapters.tblPatientTableAdapter();
             this.tableAdapterManager = new HospitalDatabase.HospitalDataSetTableAdapters.TableAdapterManager();
             this.tblPatientBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
@@ -60,8 +60,8 @@
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.tblPatientBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblPatientBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblPatientBindingNavigator)).BeginInit();
             this.tblPatientBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblPatientDataGridView)).BeginInit();
@@ -70,24 +70,26 @@
             // cboField
             // 
             this.cboField.FormattingEnabled = true;
+            this.cboField.Items.AddRange(new object[] {
+            "PatientID",
+            "Surname",
+            "FirstName",
+            "Gender",
+            "WardName",
+            "DateOfBirth",
+            "InPatient"});
             this.cboField.Location = new System.Drawing.Point(44, 54);
             this.cboField.Name = "cboField";
             this.cboField.Size = new System.Drawing.Size(121, 21);
             this.cboField.TabIndex = 0;
             // 
-            // tblPatientBindingSource
-            // 
-            this.tblPatientBindingSource.DataMember = "tblPatient";
-            this.tblPatientBindingSource.DataSource = this.hospitalDataSet;
-            // 
-            // hospitalDataSet
-            // 
-            this.hospitalDataSet.DataSetName = "HospitalDataSet";
-            this.hospitalDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // cboOperator
             // 
             this.cboOperator.FormattingEnabled = true;
+            this.cboOperator.Items.AddRange(new object[] {
+            "Equals =",
+            "Greater than >",
+            "Less than <"});
             this.cboOperator.Location = new System.Drawing.Point(172, 54);
             this.cboOperator.Name = "cboOperator";
             this.cboOperator.Size = new System.Drawing.Size(121, 21);
@@ -119,6 +121,16 @@
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // hospitalDataSet
+            // 
+            this.hospitalDataSet.DataSetName = "HospitalDataSet";
+            this.hospitalDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblPatientBindingSource
+            // 
+            this.tblPatientBindingSource.DataMember = "tblPatient";
+            this.tblPatientBindingSource.DataSource = this.hospitalDataSet;
             // 
             // tblPatientTableAdapter
             // 
@@ -267,9 +279,9 @@
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewCheckBoxColumn1});
             this.tblPatientDataGridView.DataSource = this.tblPatientBindingSource;
-            this.tblPatientDataGridView.Location = new System.Drawing.Point(12, 102);
+            this.tblPatientDataGridView.Location = new System.Drawing.Point(11, 95);
             this.tblPatientDataGridView.Name = "tblPatientDataGridView";
-            this.tblPatientDataGridView.Size = new System.Drawing.Size(742, 220);
+            this.tblPatientDataGridView.Size = new System.Drawing.Size(743, 354);
             this.tblPatientDataGridView.TabIndex = 6;
             // 
             // dataGridViewTextBoxColumn1
@@ -329,8 +341,8 @@
             this.Name = "frmSearch";
             this.Text = "Task A Search";
             this.Load += new System.EventHandler(this.frmSearch_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.tblPatientBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblPatientBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblPatientBindingNavigator)).EndInit();
             this.tblPatientBindingNavigator.ResumeLayout(false);
             this.tblPatientBindingNavigator.PerformLayout();

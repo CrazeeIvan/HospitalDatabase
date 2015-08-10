@@ -494,9 +494,9 @@
             this.txtPosition.Enabled = false;
             this.txtPosition.Location = new System.Drawing.Point(337, 293);
             this.txtPosition.Name = "txtPosition";
-            this.txtPosition.Size = new System.Drawing.Size(75, 20);
+            this.txtPosition.Size = new System.Drawing.Size(66, 20);
             this.txtPosition.TabIndex = 29;
-            this.txtPosition.Text = " ";
+            this.txtPosition.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnNext
             // 
