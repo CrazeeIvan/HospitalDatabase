@@ -1,0 +1,23 @@
+>
+=
+<
+
+where txtBox = ?
+
+where txtbox < ?
+
+where txtbox > ?
+
+run query
+
+if operator == '='
+then where cboField = txtbox
+
+else if operator == '>'
+then where cboField > txtbox
+
+else if operator == '<'
+then where cboField < txtbox
+
+else
+messagebox.show (error)
