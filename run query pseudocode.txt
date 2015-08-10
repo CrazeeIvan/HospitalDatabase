@@ -21,3 +21,19 @@ then where cboField < txtbox
 
 else
 messagebox.show (error)
+
+
+
+SELECT        PatientID, Surname, FirstName, Gender, WardName, DateOfBirth, InPatient
+FROM            tblPatient
+WHERE        (c = @Param1)
+
+
+
+PatientID
+Surname
+FirstName
+Gender
+WardName
+DateOfBirth
+InPatient
