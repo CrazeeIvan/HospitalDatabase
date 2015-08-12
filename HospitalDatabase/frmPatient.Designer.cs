@@ -81,6 +81,14 @@
             this.btnPrevious = new System.Windows.Forms.Button();
             this.btnFirst = new System.Windows.Forms.Button();
             this.btnLast = new System.Windows.Forms.Button();
+            this.tblPatientDataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewCheckBoxColumn2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             patientIDLabel = new System.Windows.Forms.Label();
             surnameLabel = new System.Windows.Forms.Label();
             firstNameLabel = new System.Windows.Forms.Label();
@@ -93,6 +101,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tblPatientBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblPatientDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblPatientDataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // patientIDLabel
@@ -194,7 +203,7 @@
             this.tblPatientBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.tblPatientBindingNavigator.Name = "tblPatientBindingNavigator";
             this.tblPatientBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.tblPatientBindingNavigator.Size = new System.Drawing.Size(770, 25);
+            this.tblPatientBindingNavigator.Size = new System.Drawing.Size(790, 25);
             this.tblPatientBindingNavigator.TabIndex = 15;
             this.tblPatientBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -538,11 +547,72 @@
             this.btnLast.UseVisualStyleBackColor = true;
             this.btnLast.Click += new System.EventHandler(this.btnLast_Click);
             // 
+            // tblPatientDataGridView1
+            // 
+            this.tblPatientDataGridView1.AutoGenerateColumns = false;
+            this.tblPatientDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tblPatientDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewCheckBoxColumn2});
+            this.tblPatientDataGridView1.DataSource = this.tblPatientBindingSource;
+            this.tblPatientDataGridView1.Location = new System.Drawing.Point(65, 140);
+            this.tblPatientDataGridView1.Name = "tblPatientDataGridView1";
+            this.tblPatientDataGridView1.Size = new System.Drawing.Size(624, 220);
+            this.tblPatientDataGridView1.TabIndex = 34;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "PatientID";
+            this.dataGridViewTextBoxColumn7.HeaderText = "PatientID";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Surname";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Surname";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "FirstName";
+            this.dataGridViewTextBoxColumn9.HeaderText = "FirstName";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "Gender";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Gender";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "WardName";
+            this.dataGridViewTextBoxColumn11.HeaderText = "WardName";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "DateOfBirth";
+            this.dataGridViewTextBoxColumn12.HeaderText = "DateOfBirth";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            // 
+            // dataGridViewCheckBoxColumn2
+            // 
+            this.dataGridViewCheckBoxColumn2.DataPropertyName = "InPatient";
+            this.dataGridViewCheckBoxColumn2.HeaderText = "InPatient";
+            this.dataGridViewCheckBoxColumn2.Name = "dataGridViewCheckBoxColumn2";
+            // 
             // frmPatient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(770, 453);
+            this.ClientSize = new System.Drawing.Size(790, 473);
+            this.Controls.Add(this.tblPatientDataGridView1);
             this.Controls.Add(this.btnLast);
             this.Controls.Add(this.btnFirst);
             this.Controls.Add(this.btnPrevious);
@@ -580,6 +650,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tblPatientBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblPatientDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblPatientDataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -631,6 +702,14 @@
         private System.Windows.Forms.Button btnPrevious;
         private System.Windows.Forms.Button btnFirst;
         private System.Windows.Forms.Button btnLast;
+        private System.Windows.Forms.DataGridView tblPatientDataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn2;
     }
 }
 

@@ -28,7 +28,9 @@ SELECT        PatientID, Surname, FirstName, Gender, WardName, DateOfBirth, InPa
 FROM            tblPatient
 WHERE        (c = @Param1)
 
-
+SELECT        PatientID, Surname, FirstName, Gender, WardName, DateOfBirth, InPatient
+FROM            tblPatient
+WHERE        (PatientID < @Param1)
 
 PatientID
 Surname
@@ -37,3 +39,5 @@ Gender
 WardName
 DateOfBirth
 InPatient
+
+
