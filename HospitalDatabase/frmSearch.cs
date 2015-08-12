@@ -34,7 +34,6 @@ namespace HospitalDatabase
             switch (cboField.SelectedItem.ToString())
             {
                 case "PatientID":
-
                     switch (cboOperator.SelectedItem.ToString())
                     {
                         case "Equals =":

@@ -36,31 +36,9 @@
             System.Windows.Forms.Label wardNameLabel;
             System.Windows.Forms.Label dateOfBirthLabel;
             System.Windows.Forms.Label inPatientLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPatient));
             this.lblPatientsTitle = new System.Windows.Forms.Label();
-            this.tblPatientBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.tblPatientBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hospitalDataSet = new HospitalDatabase.HospitalDataSet();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.tblPatientBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.tblPatientDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.patientIDTextBox = new System.Windows.Forms.TextBox();
             this.surnameTextBox = new System.Windows.Forms.TextBox();
             this.firstNameTextBox = new System.Windows.Forms.TextBox();
@@ -81,14 +59,6 @@
             this.btnPrevious = new System.Windows.Forms.Button();
             this.btnFirst = new System.Windows.Forms.Button();
             this.btnLast = new System.Windows.Forms.Button();
-            this.tblPatientDataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewCheckBoxColumn2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             patientIDLabel = new System.Windows.Forms.Label();
             surnameLabel = new System.Windows.Forms.Label();
             firstNameLabel = new System.Windows.Forms.Label();
@@ -96,18 +66,14 @@
             wardNameLabel = new System.Windows.Forms.Label();
             dateOfBirthLabel = new System.Windows.Forms.Label();
             inPatientLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.tblPatientBindingNavigator)).BeginInit();
-            this.tblPatientBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblPatientBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblPatientDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblPatientDataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // patientIDLabel
             // 
             patientIDLabel.AutoSize = true;
-            patientIDLabel.Location = new System.Drawing.Point(40, 91);
+            patientIDLabel.Location = new System.Drawing.Point(22, 88);
             patientIDLabel.Name = "patientIDLabel";
             patientIDLabel.Size = new System.Drawing.Size(57, 13);
             patientIDLabel.TabIndex = 15;
@@ -116,7 +82,7 @@
             // surnameLabel
             // 
             surnameLabel.AutoSize = true;
-            surnameLabel.Location = new System.Drawing.Point(40, 117);
+            surnameLabel.Location = new System.Drawing.Point(22, 114);
             surnameLabel.Name = "surnameLabel";
             surnameLabel.Size = new System.Drawing.Size(52, 13);
             surnameLabel.TabIndex = 16;
@@ -125,7 +91,7 @@
             // firstNameLabel
             // 
             firstNameLabel.AutoSize = true;
-            firstNameLabel.Location = new System.Drawing.Point(40, 145);
+            firstNameLabel.Location = new System.Drawing.Point(22, 142);
             firstNameLabel.Name = "firstNameLabel";
             firstNameLabel.Size = new System.Drawing.Size(60, 13);
             firstNameLabel.TabIndex = 17;
@@ -134,7 +100,7 @@
             // genderLabel
             // 
             genderLabel.AutoSize = true;
-            genderLabel.Location = new System.Drawing.Point(40, 171);
+            genderLabel.Location = new System.Drawing.Point(22, 168);
             genderLabel.Name = "genderLabel";
             genderLabel.Size = new System.Drawing.Size(45, 13);
             genderLabel.TabIndex = 18;
@@ -143,7 +109,7 @@
             // wardNameLabel
             // 
             wardNameLabel.AutoSize = true;
-            wardNameLabel.Location = new System.Drawing.Point(40, 197);
+            wardNameLabel.Location = new System.Drawing.Point(22, 194);
             wardNameLabel.Name = "wardNameLabel";
             wardNameLabel.Size = new System.Drawing.Size(67, 13);
             wardNameLabel.TabIndex = 19;
@@ -152,7 +118,7 @@
             // dateOfBirthLabel
             // 
             dateOfBirthLabel.AutoSize = true;
-            dateOfBirthLabel.Location = new System.Drawing.Point(40, 223);
+            dateOfBirthLabel.Location = new System.Drawing.Point(22, 220);
             dateOfBirthLabel.Name = "dateOfBirthLabel";
             dateOfBirthLabel.Size = new System.Drawing.Size(71, 13);
             dateOfBirthLabel.TabIndex = 20;
@@ -161,7 +127,7 @@
             // inPatientLabel
             // 
             inPatientLabel.AutoSize = true;
-            inPatientLabel.Location = new System.Drawing.Point(40, 247);
+            inPatientLabel.Location = new System.Drawing.Point(22, 244);
             inPatientLabel.Name = "inPatientLabel";
             inPatientLabel.Size = new System.Drawing.Size(55, 13);
             inPatientLabel.TabIndex = 21;
@@ -171,50 +137,11 @@
             // 
             this.lblPatientsTitle.AutoSize = true;
             this.lblPatientsTitle.Font = new System.Drawing.Font("Magneto", 25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPatientsTitle.Location = new System.Drawing.Point(284, 25);
+            this.lblPatientsTitle.Location = new System.Drawing.Point(219, 23);
             this.lblPatientsTitle.Name = "lblPatientsTitle";
             this.lblPatientsTitle.Size = new System.Drawing.Size(173, 41);
             this.lblPatientsTitle.TabIndex = 0;
             this.lblPatientsTitle.Text = "Patients";
-            // 
-            // tblPatientBindingNavigator
-            // 
-            this.tblPatientBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.tblPatientBindingNavigator.BindingSource = this.tblPatientBindingSource;
-            this.tblPatientBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.tblPatientBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.tblPatientBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
-            this.tblPatientBindingNavigatorSaveItem});
-            this.tblPatientBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.tblPatientBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.tblPatientBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.tblPatientBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.tblPatientBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.tblPatientBindingNavigator.Name = "tblPatientBindingNavigator";
-            this.tblPatientBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.tblPatientBindingNavigator.Size = new System.Drawing.Size(790, 25);
-            this.tblPatientBindingNavigator.TabIndex = 15;
-            this.tblPatientBindingNavigator.Text = "bindingNavigator1";
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // tblPatientBindingSource
             // 
@@ -226,155 +153,10 @@
             this.hospitalDataSet.DataSetName = "HospitalDataSet";
             this.hospitalDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveFirstItem.Text = "Move first";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
-            // 
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Position";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Current position";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveNextItem.Text = "Move next";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveLastItem.Text = "Move last";
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // tblPatientBindingNavigatorSaveItem
-            // 
-            this.tblPatientBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tblPatientBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("tblPatientBindingNavigatorSaveItem.Image")));
-            this.tblPatientBindingNavigatorSaveItem.Name = "tblPatientBindingNavigatorSaveItem";
-            this.tblPatientBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
-            this.tblPatientBindingNavigatorSaveItem.Text = "Save Data";
-            this.tblPatientBindingNavigatorSaveItem.Click += new System.EventHandler(this.tblPatientBindingNavigatorSaveItem_Click);
-            // 
-            // tblPatientDataGridView
-            // 
-            this.tblPatientDataGridView.AutoGenerateColumns = false;
-            this.tblPatientDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tblPatientDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewCheckBoxColumn1});
-            this.tblPatientDataGridView.DataSource = this.tblPatientBindingSource;
-            this.tblPatientDataGridView.Location = new System.Drawing.Point(0, 335);
-            this.tblPatientDataGridView.Name = "tblPatientDataGridView";
-            this.tblPatientDataGridView.Size = new System.Drawing.Size(770, 118);
-            this.tblPatientDataGridView.TabIndex = 15;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "PatientID";
-            this.dataGridViewTextBoxColumn1.HeaderText = "PatientID";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Surname";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Surname";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "FirstName";
-            this.dataGridViewTextBoxColumn3.HeaderText = "FirstName";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Gender";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Gender";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "WardName";
-            this.dataGridViewTextBoxColumn5.HeaderText = "WardName";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "DateOfBirth";
-            this.dataGridViewTextBoxColumn6.HeaderText = "DateOfBirth";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewCheckBoxColumn1
-            // 
-            this.dataGridViewCheckBoxColumn1.DataPropertyName = "InPatient";
-            this.dataGridViewCheckBoxColumn1.HeaderText = "InPatient";
-            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
-            // 
             // patientIDTextBox
             // 
             this.patientIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tblPatientBindingSource, "PatientID", true));
-            this.patientIDTextBox.Location = new System.Drawing.Point(134, 84);
+            this.patientIDTextBox.Location = new System.Drawing.Point(116, 81);
             this.patientIDTextBox.Name = "patientIDTextBox";
             this.patientIDTextBox.Size = new System.Drawing.Size(100, 20);
             this.patientIDTextBox.TabIndex = 16;
@@ -382,7 +164,7 @@
             // surnameTextBox
             // 
             this.surnameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tblPatientBindingSource, "Surname", true));
-            this.surnameTextBox.Location = new System.Drawing.Point(134, 110);
+            this.surnameTextBox.Location = new System.Drawing.Point(116, 107);
             this.surnameTextBox.Name = "surnameTextBox";
             this.surnameTextBox.Size = new System.Drawing.Size(100, 20);
             this.surnameTextBox.TabIndex = 17;
@@ -390,7 +172,7 @@
             // firstNameTextBox
             // 
             this.firstNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tblPatientBindingSource, "FirstName", true));
-            this.firstNameTextBox.Location = new System.Drawing.Point(134, 138);
+            this.firstNameTextBox.Location = new System.Drawing.Point(116, 135);
             this.firstNameTextBox.Name = "firstNameTextBox";
             this.firstNameTextBox.Size = new System.Drawing.Size(100, 20);
             this.firstNameTextBox.TabIndex = 18;
@@ -398,7 +180,7 @@
             // genderTextBox
             // 
             this.genderTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tblPatientBindingSource, "Gender", true));
-            this.genderTextBox.Location = new System.Drawing.Point(134, 164);
+            this.genderTextBox.Location = new System.Drawing.Point(116, 161);
             this.genderTextBox.Name = "genderTextBox";
             this.genderTextBox.Size = new System.Drawing.Size(100, 20);
             this.genderTextBox.TabIndex = 19;
@@ -406,7 +188,7 @@
             // wardNameTextBox
             // 
             this.wardNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tblPatientBindingSource, "WardName", true));
-            this.wardNameTextBox.Location = new System.Drawing.Point(134, 190);
+            this.wardNameTextBox.Location = new System.Drawing.Point(116, 187);
             this.wardNameTextBox.Name = "wardNameTextBox";
             this.wardNameTextBox.Size = new System.Drawing.Size(100, 20);
             this.wardNameTextBox.TabIndex = 20;
@@ -414,7 +196,7 @@
             // dateOfBirthDateTimePicker
             // 
             this.dateOfBirthDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.tblPatientBindingSource, "DateOfBirth", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, "01/01/2015", "d"));
-            this.dateOfBirthDateTimePicker.Location = new System.Drawing.Point(134, 216);
+            this.dateOfBirthDateTimePicker.Location = new System.Drawing.Point(116, 213);
             this.dateOfBirthDateTimePicker.Name = "dateOfBirthDateTimePicker";
             this.dateOfBirthDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.dateOfBirthDateTimePicker.TabIndex = 21;
@@ -422,7 +204,7 @@
             // inPatientCheckBox
             // 
             this.inPatientCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.tblPatientBindingSource, "InPatient", true));
-            this.inPatientCheckBox.Location = new System.Drawing.Point(134, 242);
+            this.inPatientCheckBox.Location = new System.Drawing.Point(116, 239);
             this.inPatientCheckBox.Name = "inPatientCheckBox";
             this.inPatientCheckBox.Size = new System.Drawing.Size(104, 24);
             this.inPatientCheckBox.TabIndex = 22;
@@ -430,7 +212,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(645, 81);
+            this.btnUpdate.Location = new System.Drawing.Point(470, 79);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 23;
@@ -440,7 +222,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(645, 106);
+            this.btnAdd.Location = new System.Drawing.Point(470, 104);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 24;
@@ -450,7 +232,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(645, 134);
+            this.btnDelete.Location = new System.Drawing.Point(470, 132);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 25;
@@ -460,7 +242,7 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(645, 160);
+            this.btnSearch.Location = new System.Drawing.Point(470, 158);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 23);
             this.btnSearch.TabIndex = 26;
@@ -470,7 +252,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(645, 186);
+            this.btnCancel.Location = new System.Drawing.Point(470, 184);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 27;
@@ -480,7 +262,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(645, 212);
+            this.btnExit.Location = new System.Drawing.Point(470, 210);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 28;
@@ -501,7 +283,7 @@
             // txtPosition
             // 
             this.txtPosition.Enabled = false;
-            this.txtPosition.Location = new System.Drawing.Point(337, 293);
+            this.txtPosition.Location = new System.Drawing.Point(274, 299);
             this.txtPosition.Name = "txtPosition";
             this.txtPosition.Size = new System.Drawing.Size(66, 20);
             this.txtPosition.TabIndex = 29;
@@ -509,7 +291,7 @@
             // 
             // btnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(381, 264);
+            this.btnNext.Location = new System.Drawing.Point(316, 269);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(75, 23);
             this.btnNext.TabIndex = 31;
@@ -519,7 +301,7 @@
             // 
             // btnPrevious
             // 
-            this.btnPrevious.Location = new System.Drawing.Point(291, 264);
+            this.btnPrevious.Location = new System.Drawing.Point(226, 269);
             this.btnPrevious.Name = "btnPrevious";
             this.btnPrevious.Size = new System.Drawing.Size(75, 23);
             this.btnPrevious.TabIndex = 32;
@@ -529,7 +311,7 @@
             // 
             // btnFirst
             // 
-            this.btnFirst.Location = new System.Drawing.Point(210, 264);
+            this.btnFirst.Location = new System.Drawing.Point(145, 269);
             this.btnFirst.Name = "btnFirst";
             this.btnFirst.Size = new System.Drawing.Size(75, 23);
             this.btnFirst.TabIndex = 33;
@@ -539,7 +321,7 @@
             // 
             // btnLast
             // 
-            this.btnLast.Location = new System.Drawing.Point(462, 264);
+            this.btnLast.Location = new System.Drawing.Point(397, 269);
             this.btnLast.Name = "btnLast";
             this.btnLast.Size = new System.Drawing.Size(75, 23);
             this.btnLast.TabIndex = 34;
@@ -547,72 +329,11 @@
             this.btnLast.UseVisualStyleBackColor = true;
             this.btnLast.Click += new System.EventHandler(this.btnLast_Click);
             // 
-            // tblPatientDataGridView1
-            // 
-            this.tblPatientDataGridView1.AutoGenerateColumns = false;
-            this.tblPatientDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tblPatientDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11,
-            this.dataGridViewTextBoxColumn12,
-            this.dataGridViewCheckBoxColumn2});
-            this.tblPatientDataGridView1.DataSource = this.tblPatientBindingSource;
-            this.tblPatientDataGridView1.Location = new System.Drawing.Point(65, 140);
-            this.tblPatientDataGridView1.Name = "tblPatientDataGridView1";
-            this.tblPatientDataGridView1.Size = new System.Drawing.Size(624, 220);
-            this.tblPatientDataGridView1.TabIndex = 34;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "PatientID";
-            this.dataGridViewTextBoxColumn7.HeaderText = "PatientID";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "Surname";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Surname";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "FirstName";
-            this.dataGridViewTextBoxColumn9.HeaderText = "FirstName";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "Gender";
-            this.dataGridViewTextBoxColumn10.HeaderText = "Gender";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "WardName";
-            this.dataGridViewTextBoxColumn11.HeaderText = "WardName";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "DateOfBirth";
-            this.dataGridViewTextBoxColumn12.HeaderText = "DateOfBirth";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            // 
-            // dataGridViewCheckBoxColumn2
-            // 
-            this.dataGridViewCheckBoxColumn2.DataPropertyName = "InPatient";
-            this.dataGridViewCheckBoxColumn2.HeaderText = "InPatient";
-            this.dataGridViewCheckBoxColumn2.Name = "dataGridViewCheckBoxColumn2";
-            // 
             // frmPatient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(790, 473);
-            this.Controls.Add(this.tblPatientDataGridView1);
+            this.ClientSize = new System.Drawing.Size(562, 331);
             this.Controls.Add(this.btnLast);
             this.Controls.Add(this.btnFirst);
             this.Controls.Add(this.btnPrevious);
@@ -638,19 +359,12 @@
             this.Controls.Add(this.surnameTextBox);
             this.Controls.Add(patientIDLabel);
             this.Controls.Add(this.patientIDTextBox);
-            this.Controls.Add(this.tblPatientDataGridView);
-            this.Controls.Add(this.tblPatientBindingNavigator);
             this.Controls.Add(this.lblPatientsTitle);
             this.Name = "frmPatient";
             this.Text = "Task A - Ciarán Maher";
             this.Load += new System.EventHandler(this.frmPatient_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.tblPatientBindingNavigator)).EndInit();
-            this.tblPatientBindingNavigator.ResumeLayout(false);
-            this.tblPatientBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblPatientBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblPatientDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblPatientDataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -663,27 +377,6 @@
         private System.Windows.Forms.BindingSource tblPatientBindingSource;
         private HospitalDataSetTableAdapters.tblPatientTableAdapter tblPatientTableAdapter;
         private HospitalDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator tblPatientBindingNavigator;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
-        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
-        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton tblPatientBindingNavigatorSaveItem;
-        private System.Windows.Forms.DataGridView tblPatientDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
         private System.Windows.Forms.TextBox patientIDTextBox;
         private System.Windows.Forms.TextBox surnameTextBox;
         private System.Windows.Forms.TextBox firstNameTextBox;
@@ -702,14 +395,6 @@
         private System.Windows.Forms.Button btnPrevious;
         private System.Windows.Forms.Button btnFirst;
         private System.Windows.Forms.Button btnLast;
-        private System.Windows.Forms.DataGridView tblPatientDataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn2;
     }
 }
 

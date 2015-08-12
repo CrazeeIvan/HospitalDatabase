@@ -12,6 +12,7 @@ namespace HospitalDatabase
 {
     public partial class frmPatient : Form
     {
+        string newline = Environment.NewLine;
         int pos;
         public frmPatient()
         {
@@ -50,7 +51,7 @@ namespace HospitalDatabase
             }
             catch (System.Exception ex)
             {
-                MessageBox.Show("Update failed. /nException: " + ex);
+                MessageBox.Show("Update failed." + newline + "Original Error:" + ex);
             }
         }
         private void btnCancel_Click(object sender, EventArgs e)
@@ -65,7 +66,7 @@ namespace HospitalDatabase
             }
             catch (System.Exception ex)
             {
-                MessageBox.Show("Cancel failed. /nException: " + ex);
+                MessageBox.Show("Cancel failed." + newline + "Original Error:" + newline + ex);
             }
         }
         private void btnNext_Click(object sender, EventArgs e)
@@ -97,9 +98,28 @@ namespace HospitalDatabase
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            this.tblPatientBindingSource.RemoveCurrent();
-            pos = this.tblPatientBindingSource.Position;
-            txtPosition.Text = Convert.ToString(pos + 1) + " " + "of " + tblPatientBindingSource.Count;
+            DialogResult myResult;
+
+            myResult = MessageBox.Show("Are you sure you want to delete this patient?", "Delete Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (myResult == DialogResult.OK)
+            {
+                try
+                {
+                    this.tblPatientBindingSource.RemoveCurrent();
+                    pos = this.tblPatientBindingSource.Position;
+                    txtPosition.Text = Convert.ToString(pos + 1) + " " + "of " + tblPatientBindingSource.Count;
+                    MessageBox.Show("Delete successful.");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Delete failed. Is your database empty?" + newline + "Original error:" + newline + ex);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Delete canceled.");
+            }
+            
         }
         private void btnAdd_Click(object sender, EventArgs e)
         {
