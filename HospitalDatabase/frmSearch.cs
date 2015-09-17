@@ -43,7 +43,7 @@ namespace HospitalDatabase
                             }
                             catch (System.Exception ex)
                             {
-                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex);
+                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex.Message);
                             }
                             break;
                         case "Less than <":
@@ -53,7 +53,7 @@ namespace HospitalDatabase
                             }
                             catch (System.Exception ex)
                             {
-                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex);
+                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex.Message);
                             }
                             break;
                         case "Greater than >":
@@ -63,7 +63,7 @@ namespace HospitalDatabase
                             }
                             catch (System.Exception ex)
                             {
-                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex);
+                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex.Message);
                             }
                             break;
                     }
@@ -78,7 +78,7 @@ namespace HospitalDatabase
                             }
                             catch (System.Exception ex)
                             {
-                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex);
+                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex.Message);
                             }
                             break;
                         case "Less than <":
@@ -88,7 +88,7 @@ namespace HospitalDatabase
                             }
                             catch (System.Exception ex)
                             {
-                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex);
+                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex.Message);
                             }
                             break;
                         case "Greater than >":
@@ -98,7 +98,7 @@ namespace HospitalDatabase
                             }
                             catch (System.Exception ex)
                             {
-                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex);
+                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex.Message);
                             }
                             break;
                     }
@@ -113,7 +113,7 @@ namespace HospitalDatabase
                             }
                             catch (System.Exception ex)
                             {
-                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex);
+                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex.Message);
                             }
                             break;
                         case "Less than <":
@@ -123,7 +123,7 @@ namespace HospitalDatabase
                             }
                             catch (System.Exception ex)
                             {
-                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex);
+                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex.Message);
                             }
                             break;
                         case "Greater than >":
@@ -133,7 +133,7 @@ namespace HospitalDatabase
                             }
                             catch (System.Exception ex)
                             {
-                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex);
+                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex.Message);
                             }
                             break;
                     }
@@ -148,7 +148,7 @@ namespace HospitalDatabase
                             }
                             catch (System.Exception ex)
                             {
-                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex);
+                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex.Message);
                             }
                             break;
                         case "Less than <":
@@ -158,7 +158,7 @@ namespace HospitalDatabase
                             }
                             catch (System.Exception ex)
                             {
-                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex);
+                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex.Message);
                             }
                             break;
                         case "Greater than >":
@@ -168,7 +168,7 @@ namespace HospitalDatabase
                             }
                             catch (System.Exception ex)
                             {
-                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex);
+                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex.Message);
                             }
                             break;
                     }
@@ -183,7 +183,7 @@ namespace HospitalDatabase
                             }
                             catch (System.Exception ex)
                             {
-                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex);
+                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex.Message);
                             }
                             break;
                         case "Less than <":
@@ -193,7 +193,7 @@ namespace HospitalDatabase
                             }
                             catch (System.Exception ex)
                             {
-                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex);
+                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex.Message);
                             }
                             break;
                         case "Greater than >":
@@ -203,7 +203,7 @@ namespace HospitalDatabase
                             }
                             catch (System.Exception ex)
                             {
-                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex);
+                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex.Message);
                             }
                             break;
                     }
@@ -218,7 +218,7 @@ namespace HospitalDatabase
                             }
                             catch (System.Exception ex)
                             {
-                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex);
+                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex.Message);
                             }
                             break;
                         case "Less than <":
@@ -228,7 +228,7 @@ namespace HospitalDatabase
                             }
                             catch (System.Exception ex)
                             {
-                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex);
+                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex.Message);
                             }
                             break;
                         case "Greater than >":
@@ -238,7 +238,7 @@ namespace HospitalDatabase
                             }
                             catch (System.Exception ex)
                             {
-                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex);
+                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex.Message);
                             }
                             break;
                     }
@@ -253,7 +253,7 @@ namespace HospitalDatabase
                             }
                             catch (System.Exception ex)
                             {
-                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex);
+                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex.Message);
                             }
                             break;
                         case "Less than <":
@@ -263,7 +263,7 @@ namespace HospitalDatabase
                             }
                             catch (System.Exception ex)
                             {
-                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex);
+                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex.Message);
                             }
                             break;
                         case "Greater than >":
@@ -273,7 +273,7 @@ namespace HospitalDatabase
                             }
                             catch (System.Exception ex)
                             {
-                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex);
+                                MessageBox.Show("Invalid search parameters. Please try again." + newline + "Original error: " + newline + ex.Message);
                             }
                             break;
                     }

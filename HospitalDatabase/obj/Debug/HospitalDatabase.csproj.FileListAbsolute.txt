@@ -10,3 +10,15 @@ C:\Users\blue20\Documents\VSprojects\HospitalDatabase\HospitalDatabase\HospitalD
 C:\Users\blue20\Documents\VSprojects\HospitalDatabase\HospitalDatabase\HospitalDatabase\bin\Debug\Hospital.mdf
 C:\Users\blue20\Documents\VSprojects\HospitalDatabase\HospitalDatabase\HospitalDatabase\bin\Debug\Hospital_log.ldf
 C:\Users\blue20\Documents\VSprojects\HospitalDatabase\HospitalDatabase\HospitalDatabase\obj\Debug\HospitalDatabase.frmSearch.resources
+C:\Users\User\Documents\HospitalDatabase\HospitalDatabase\bin\Debug\HospitalDatabase.exe.config
+C:\Users\User\Documents\HospitalDatabase\HospitalDatabase\obj\Debug\HospitalDatabase.exe
+C:\Users\User\Documents\HospitalDatabase\HospitalDatabase\obj\Debug\HospitalDatabase.pdb
+C:\Users\User\Documents\HospitalDatabase\HospitalDatabase\bin\Debug\Hospital.mdf
+C:\Users\User\Documents\HospitalDatabase\HospitalDatabase\bin\Debug\Hospital_log.ldf
+C:\Users\User\Documents\HospitalDatabase\HospitalDatabase\bin\Debug\HospitalDatabase.exe
+C:\Users\User\Documents\HospitalDatabase\HospitalDatabase\bin\Debug\HospitalDatabase.pdb
+C:\Users\User\Documents\HospitalDatabase\HospitalDatabase\obj\Debug\HospitalDatabase.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\HospitalDatabase\HospitalDatabase\obj\Debug\HospitalDatabase.frmPatient.resources
+C:\Users\User\Documents\HospitalDatabase\HospitalDatabase\obj\Debug\HospitalDatabase.frmSearch.resources
+C:\Users\User\Documents\HospitalDatabase\HospitalDatabase\obj\Debug\HospitalDatabase.Properties.Resources.resources
+C:\Users\User\Documents\HospitalDatabase\HospitalDatabase\obj\Debug\HospitalDatabase.csproj.GenerateResource.Cache

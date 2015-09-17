@@ -51,7 +51,7 @@ namespace HospitalDatabase
             }
             catch (System.Exception ex)
             {
-                MessageBox.Show("Update failed." + newline + "Original Error:" + ex);
+                MessageBox.Show("Update failed." + newline + "Original Error:" + ex.Message);
             }
         }
         private void btnCancel_Click(object sender, EventArgs e)
@@ -66,7 +66,7 @@ namespace HospitalDatabase
             }
             catch (System.Exception ex)
             {
-                MessageBox.Show("Cancel failed." + newline + "Original Error:" + newline + ex);
+                MessageBox.Show("Cancel failed." + newline + "Original Error:" + newline + ex.Message);
             }
         }
         private void btnNext_Click(object sender, EventArgs e)
@@ -112,7 +112,7 @@ namespace HospitalDatabase
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Delete failed. Is your database empty?" + newline + "Original error:" + newline + ex);
+                    MessageBox.Show("Delete failed. Is your database empty?" + newline + "Original error:" + newline + ex.Message);
                 }
             }
             else
